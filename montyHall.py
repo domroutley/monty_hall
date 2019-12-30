@@ -69,7 +69,7 @@ def simulate(runs, switch):
 
         run += 1
 
-    print(record)
+    return record
 
 
 if __name__ == "__main__":
@@ -81,6 +81,6 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if args.simulate_count:
-        simulate(int(args.simulate_count), args.switch)
+        print(simulate(int(args.simulate_count), args.switch))
     else:
         manual()
