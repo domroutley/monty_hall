@@ -77,7 +77,7 @@ if __name__ == "__main__":
     parser.add_argument('--simulate_count', nargs='?',
                         help='Simulate the problem a number of times')
     parser.add_argument('--switch', nargs='?', default='true',
-                        help='Switch always? [true/false] (Default: true)')
+                        help='Switch doors always? [true/false] (Default: true)')
     args = parser.parse_args()
 
     if args.simulate_count:
